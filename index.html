@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="EcoTrack helps you build sustainable daily habits and track your eco-friendly actions.">
+    <title>EcoTrack | Small Actions, Greener Future</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header class="navbar">
+        <a href="#" class="logo">🌿 EcoTrack</a>
+        <a href="#challenges" class="nav-link">My Challenges</a>
+    </header>
+
+    <main class="container">
+        <section class="hero">
+            <p class="eyebrow">YOUR PLANET. YOUR ACTION.</p>
+            <h1>Small actions.<br><span>Greener future.</span></h1>
+            <p class="hero-text">
+                Make sustainable choices every day. Complete eco-challenges,
+                earn points and become a planet hero!
+            </p>
+            <a href="#challenges" class="primary-button">Start My Green Journey ↓</a>
+        </section>
+
+        <section class="stats-grid" aria-label="Your eco progress">
+            <article class="stat-card">
+                <span class="stat-icon">🌱</span>
+                <p>Total Eco Points</p>
+                <h2 id="totalPoints">0</h2>
+            </article>
+            <article class="stat-card">
+                <span class="stat-icon">✅</span>
+                <p>Tasks Completed</p>
+                <h2 id="completedCount">0 / 6</h2>
+            </article>
+            <article class="stat-card">
+                <span class="stat-icon">🏆</span>
+                <p>Current Level</p>
+                <h2 id="levelName">Seedling</h2>
+            </article>
+        </section>
+
+        <section class="progress-section">
+            <div class="section-heading">
+                <div>
+                    <p class="eyebrow">YOUR DAILY IMPACT</p>
+                    <h2>Today's Progress</h2>
+                </div>
+                <strong id="progressPercent">0%</strong>
+            </div>
+            <div class="progress-track">
+                <div class="progress-fill" id="progressFill"></div>
+            </div>
+            <p id="progressMessage">Every small action makes a difference.</p>
+        </section>
+
+        <section id="challenges" class="challenges-section">
+            <div class="section-heading">
+                <div>
+                    <p class="eyebrow">TAKE ACTION</p>
+                    <h2>Daily Eco Challenges</h2>
+                </div>
+                <span class="date-label" id="todayDate"></span>
+            </div>
+            <div id="challengeList" class="challenge-grid"></div>
+        </section>
+
+        <section class="achievement-section">
+            <p class="eyebrow">KEEP GROWING</p>
+            <h2>Your Achievements</h2>
+            <p class="section-description">Earn points to unlock your green badges.</p>
+            <div class="badge-grid">
+                <article class="badge-card" id="badgeBeginner">
+                    <span>🌱</span>
+                    <h3>Eco Beginner</h3>
+                    <p>Earn 20 points</p>
+                    <small>Locked</small>
+                </article>
+                <article class="badge-card" id="badgeHero">
+                    <span>🌳</span>
+                    <h3>Green Hero</h3>
+                    <p>Earn 60 points</p>
+                    <small>Locked</small>
+                </article>
+                <article class="badge-card" id="badgeChampion">
+                    <span>🌍</span>
+                    <h3>Planet Champion</h3>
+                    <p>Earn 100 points</p>
+                    <small>Locked</small>
+                </article>
+            </div>
+        </section>
+
+        <section class="tip-section">
+            <span class="tip-icon">💡</span>
+            <div>
+                <p class="eyebrow">TODAY'S ECO TIP</p>
+                <h3 id="tipTitle">Carry a reusable bottle</h3>
+                <p id="tipText">A reusable bottle can help reduce single-use plastic waste.</p>
+            </div>
+            <button id="nextTip" class="secondary-button" type="button">Next Tip →</button>
+        </section>
+
+        <section class="reset-section">
+            <p>Want to start your daily challenges again?</p>
+            <button id="resetButton" class="reset-button" type="button">Reset Today's Progress</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>🌿 EcoTrack — Small Steps, Big Impact.</p>
+        <p>Built with HTML, CSS, JavaScript and Git.</p>
+    </footer>
+
+    <div id="toast" class="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
