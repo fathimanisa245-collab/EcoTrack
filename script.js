@@ -187,6 +187,8 @@ function updateDashboard() {
     $("completedCount").textContent =
         `${completedCount} / ${challenges.length}`;
     $("levelName").textContent = getLevel(points);
+    $("remainingCount").textContent =
+    challenges.length - completedCount;
     $("progressPercent").textContent = `${percentage}%`;
     $("progressFill").style.width = `${percentage}%`;
 
